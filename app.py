@@ -5,8 +5,6 @@ from flask import Flask, render_template
 from flask_data_models import User, Offer, Languages, Skills
 from flask_sqlalchemy import SQLAlchemy
 
-a_test_var = testing_var
-print(a_test_var)
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = database_url
 db.init_app(app)
